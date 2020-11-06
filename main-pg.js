@@ -46,6 +46,10 @@ function render(data)
 {
  
  ulElement.addEventListener('click',onUlclick)
+ if(data.length==0)
+ {
+     alert('no more beer')
+ }
  
  for (let index = 0; index < data.length; index++) {
     
