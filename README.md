@@ -1,4 +1,5 @@
 # Beer Project
+.
 ## Instruktioner
 Utse en gruppledare som forkar det här repot och bjuder in de andra som collaborators.
 
