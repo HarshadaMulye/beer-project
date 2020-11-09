@@ -1,5 +1,10 @@
+
+
+
 body {
-    background: lightblue;
+    background-color: #fffddc;
+    background-image: url(cool-background.png);
+    background-size: cover;
 }
 
 main {
@@ -7,6 +12,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .random-beer-card {
@@ -15,14 +21,23 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 3em;
-    width: 300px;
-    height: 450px;
-    background: whitesmoke
+    width: 1100px;
+    height: 480px;
+    background: white;
+    border-radius: 40px;
+    background-image: url(back2card.png);
+    background-size: cover;
+    box-shadow: 0 17px black;
+    
+    
 }
 
 p {
-    text-decoration: underline;
-    color: cadetblue;
+    font-family: 'Overlock', cursive;
+    text-decoration: none;
+    color: #d12438;
+    cursor: pointer;
+    
 }
 
 p:hover {
@@ -30,17 +45,21 @@ p:hover {
 }
 
 h2 {
+   
+    font-family: 'Overlock', cursive;
     text-align: center;
-    color: darkgoldenrod;
+    color: black;
 }
 
 img {
     width: 200px;
-    height: 300px;
+    height: 390px;
+    
     object-fit: contain;
 }
 
 .random-beer-btn {
+    font-family: 'Overlock', cursive;
     display: inline-block;
     padding: 10px;
     cursor: pointer;
@@ -48,16 +67,50 @@ img {
     font-size: 20px;
     text-align: center;
     color: #ffff;
-    background-color: #50fff0;
+    background-color: black;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #d12438;
 }
 
-.random-beer-btn:hover {background-color: #43d6ca;}
+.random-beer-btn:hover {background-color: #2085e8;}
 
 .random-beer-btn:active {
-  background-color: #43d6ca;
+  background-color: #2085e8;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/*Header*/
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 22px;
+    
+    
+}
+
+.logo-image{
+    
+    height: 80px;
+}
+
+.search-button{
+    width: 70px;
+    height: 80px;
+   
+    
+}
+
+.search{
+    font-family: 'Overlock', cursive;
+    text-decoration: none;
+    color: white;
+    
+}
+
