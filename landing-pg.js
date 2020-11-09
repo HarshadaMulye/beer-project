@@ -39,6 +39,7 @@ const getRandomBeer = async() => {
     cardElement.appendChild(beerImg);
     cardElement.appendChild(beerName);
     cardElement.appendChild(infoLink);
+   
     infoLink.addEventListener('click', moreInfoOnclick);
 }
 
