@@ -1,5 +1,6 @@
 const cardElement = document.querySelector('.random-beer-card');
 const randomBeerBtn = document.querySelector('.random-beer-btn');
+const infoLink = document.createElement('p');
 
 const url = "https://api.punkapi.com/v2/beers/random";
 
@@ -9,14 +10,7 @@ function removeAllChildNodes(parent) {
     }
 }
 
-function moreInfoOnclick(evt) {
 
-    const id=evt.target.getAttribute('name')
-    console.log(id)
-    const url=`./myview.html?name=${id}`
-    document.location.href=url;
-
-}
 
 
 const getRandomBeer = async() => {
@@ -28,7 +22,7 @@ const getRandomBeer = async() => {
     
     const beerImg = document.createElement('img');
     const beerName = document.createElement('h2');
-    const infoLink = document.createElement('p');
+  
 
     beerImg.src = data[0].image_url;
     if(data[0].image_url == null){
@@ -40,8 +34,23 @@ const getRandomBeer = async() => {
     cardElement.appendChild(beerImg);
     cardElement.appendChild(beerName);
     cardElement.appendChild(infoLink);
-    infoLink.addEventListener('click', moreInfoOnclick);
+   seeMore(data);
 }
 
 getRandomBeer(url);
 randomBeerBtn.addEventListener('click', getRandomBeer);
+
+function seeMore(beer) {
+ 
+
+    infoLink.addEventListener('click', onseeClicked);
+    infoLink.setAttribute('name', beer[0].id);
+}
+
+function onseeClicked(evt) {
+    
+    const id = evt.target.getAttribute('name');
+    const url = `myview.html?name=${id}`;
+    document.location.href = url;
+
+}
