@@ -11,13 +11,12 @@ function removeAllChildNodes(parent) {
 
 function moreInfoOnclick(evt) {
 
-    const id=evt.target.getAttribute('name')
+    const id = evt.target.getAttribute('name')
     console.log(id)
-    const url=`./myview.html?name=${id}`
-    document.location.href=url;
+    const url = `./myview.html?name=${id}`
+    document.location.href = url;
 
 }
-
 
 const getRandomBeer = async() => {
     const response = await fetch(url);
