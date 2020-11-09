@@ -26,18 +26,18 @@ function render(data)
     const brewers_tips=beer.brewers_tips
     const description=beer.description
     const volume=Object.values(beer.volume)
-    
+    const boil_volume=Object.values(beer.boil_volume)
     const hTag=document.createElement('h1');
     const pTag=document.createElement('p')
     const pDescTag=document.createElement('p')
     const pVolumeTag=document.createElement('p')
-    
+    const pBoil_volume=document.createElement('p')
     console.log(Object.values(beer.volume))
     hTag.textContent=`Name:${name}`;
     pTag.textContent=`Brewers_tips:${brewers_tips}`
     pDescTag.textContent=`Description:${description}`
     pVolumeTag.textContent=`Volume:${volume}`
-    
+    pBoil_volume.textContent=`Boil_Volume:${boil_volume}`
     const img = document.createElement("img");
     img.setAttribute("src", beer.image_url);
     img.setAttribute('width',40)
@@ -54,6 +54,7 @@ function render(data)
     mainElement.appendChild(pTag)
     mainElement.appendChild(pDescTag)
     mainElement.appendChild(pVolumeTag)
+    mainElement.appendChild(pBoil_volume)
     ingred.forEach(element => {
      
         pIngreTag.textContent+=''+element.name+''
