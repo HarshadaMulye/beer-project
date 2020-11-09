@@ -69,11 +69,11 @@ function render(data)
    
      hops.forEach(element=>{
 
-         pHopsTag.textContent="Hops :"
+       //  pHopsTag.textContent="Hops :"
          const amount=Object.values(element.amount)
          console.log(element)
          
-         pHopsTag.textContent+=`Name:${element.name} Amount:${amount} Add:${element.add} Attribute:${element.attribute}`
+         pHopsTag.textContent+=`Hops:Name:${element.name} Amount:${amount} Add:${element.add} Attribute:${element.attribute}`
          mainElement.appendChild(pHopsTag)
      })
      food_pair=beer.food_pairing;
