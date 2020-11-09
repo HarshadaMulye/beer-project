@@ -22,7 +22,7 @@ main {
     align-items: center;
     margin-top: 3em;
     width: 1100px;
-    height: 480px;
+    height: 470px;
     background: white;
     border-radius: 40px;
     background-image: url(back2card.png);
@@ -32,10 +32,14 @@ main {
     
 }
 
+.random-beer-card img{
+    
+}
+
 p {
     font-family: 'Overlock', cursive;
     text-decoration: none;
-    color: #d12438;
+    color: gray;
     cursor: pointer;
     
 }
@@ -49,12 +53,14 @@ h2 {
     font-family: 'Overlock', cursive;
     text-align: center;
     color: black;
+    
+    
+    
 }
 
 img {
     width: 200px;
-    height: 390px;
-    
+    height: 330px;
     object-fit: contain;
 }
 
@@ -70,7 +76,7 @@ img {
     background-color: black;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 5px #d12438;
+    box-shadow: 0 5px white;
 }
 
 .random-beer-btn:hover {background-color: #2085e8;}
@@ -114,3 +120,15 @@ header{
     
 }
 
+/*footer*/
+
+.social-links img{
+    
+height: 33px;
+margin: 150px;
+cursor: pointer;
+}
+
+.social-links{
+    text-align: center;
+}
