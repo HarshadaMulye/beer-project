@@ -3,14 +3,9 @@ const mainElement=document.querySelector('main')
 const nextBtnElement=document.querySelector(".next")
 const prevBtnElement=document.querySelector(".prev")
 const api='https://api.punkapi.com/v2/beers'
-
-//const page='&page=1&per_page=10'
 const page='&page='
 let page_num=1;
 const per_page='&per_page=10';
-//const api='https://api.punkapi.com/v2/beers?beer_name=A&page=1&per_page=10'
-//https://api.punkapi.com/v2/beers?page=2&per_page=80
-//const api='https://api.punkapi.com/v2/beers?beer_name={beerName}&page=1&per_page=10'
 formElement.addEventListener('submit',onSubmit)
 const ulElement=document.createElement('ul')
 function removeAllChildNodes(parent)
@@ -24,20 +19,16 @@ function onSubmit(evt)
 {
     const search=evt.target[0].value
     console.log(search);
-   
-     //const url=`${api}?beer_name=${search}${page}`
-     const url=`${api}?beer_name=${search}${page}${page_num}${per_page}`
+    const url=`${api}?beer_name=${search}${page}${page_num}${per_page}`
      console.log(url);
      getData(url,render);
      evt.preventDefault();
-    // https://api.punkapi.com/v2/beers
 }
 function getData(url,callback)
 {
     fetch(url)
     .then(res=>res.json())
     .then(data=>{
-      
        removeAllChildNodes(ulElement)
     callback(data)
 })
@@ -71,14 +62,10 @@ function nextBtnclick(evt)
 page_num++;
 const search1=document.querySelector('.text')
 search11=search1.value;
-//const search=evt.target[0].value
     console.log(search1);
-   
-     //const url=`${api}?beer_name=${search}${page}`
-     const url=`${api}?beer_name=${search11}${page}${page_num}${per_page}`
+    const url=`${api}?beer_name=${search11}${page}${page_num}${per_page}`
      console.log(url);
      getData(url,render);
-
      evt.preventDefault();
 
 
@@ -91,15 +78,10 @@ function prevBtnclick(evt)
     page_num--;
     const search1=document.querySelector('.text')
 search11=search1.value;
-
-  //const search=evt.target[0].value
     console.log(search1);
-   
-     //const url=`${api}?beer_name=${search}${page}`
-     const url=`${api}?beer_name=${search11}${page}${page_num}${per_page}`
+   const url=`${api}?beer_name=${search11}${page}${page_num}${per_page}`
      console.log(url);
      getData(url,render);
-
      evt.preventDefault();
 }
 
