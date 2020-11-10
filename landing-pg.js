@@ -34,6 +34,7 @@ const getRandomBeer = async() => {
         beerImg.src = 'punk_ipa.png';
     }
     beerName.textContent = data[0].name;
+    infoLink.setAttribute('name',data[0].id)
     infoLink.innerHTML = 'See more';
     
     cardElement.appendChild(beerImg);
