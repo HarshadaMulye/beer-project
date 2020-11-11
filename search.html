@@ -5,19 +5,39 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Main page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="search-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap" rel="stylesheet">
 
     
 </head>
 <body>
-    <form>
-        <label for="beerElement">search beer</label>
-        <input type="text" class="text" name ="beerElement" ><br>
-        <input type="submit" value="submit">
-    </form>
+    <header>
+        <div class = "logo-holder">
+           <img class = "logo-image" src="Logo.png" alt="ipa">
+        </div>
+        
+        <div class = "search-holder"> 
+
+        <a class = "search" href="file:///C:/Users/shami/Desktop/beer-project/search.html">Search more<img class = "search-button" src="searchicon.png" alt="search"></a>
+        </div>
+                  
+    </header>
     <main>
+    <form>
+        <label class= "search-beer"for="beerElement">search beer</label>
+        <input type="text" class="text" name ="beerElement" ><br>
+        <input type="submit" class="submit" value="submit">
         <button class="next">Next</button>
         <button class="prev">Prev</button>
+    </form>
+
+
+    
     </main>
+
+
+    
     <script src='main-pg.js'></script>
 </body>
 </html>

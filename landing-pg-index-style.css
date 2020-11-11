@@ -32,14 +32,12 @@ main {
     
 }
 
-.random-beer-card img{
-    
-}
+
 
 p {
-    font-family: 'Overlock', cursive;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
-    color: gray;
+    color: black;
     cursor: pointer;
     
 }
@@ -114,7 +112,7 @@ header{
 }
 
 .search{
-    font-family: 'Overlock', cursive;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
     color: white;
     

@@ -1,0 +1,75 @@
+body {
+    background-color: #fffddc;
+    background-image: url(cool-background.png);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back2card.png);
+    background-size: cover;
+}
+
+form{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+}
+
+ul{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    list-style: none;
+    background-image: url(back2card.png);
+    background-size: cover;
+    width: 1100px;
+    height: 300px;
+}
+
+
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 22px;
+    
+    
+}
+
+.logo-image{
+    
+    height: 80px;
+}
+
+.search-button{
+    width: 70px;
+    height: 80px;
+   
+    
+}
+
+.search{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
