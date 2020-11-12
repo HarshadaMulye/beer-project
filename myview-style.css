@@ -1,0 +1,106 @@
+body {
+    background-color: #fffddc;
+    background-image: url(cool-background.png);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+main img{
+    background-image: url(back2card.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+    box-shadow: 0 17px black;
+}
+
+
+p{
+
+    font-family: 'Overlock', cursive; 
+    font-size: 17px;
+    display: inline-block;
+    line-height: 180%;
+  padding: .5em;
+  border: 1px solid  rgba(0, 0, 0, 0.377);
+  background-color: rgba(54, 157, 216, 0.473);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 0px rgba(0, 0, 20, 0.2);
+  
+}
+
+
+
+h1{
+    font-family: 'Overlock', cursive; 
+    word-spacing: 5px;
+}
+
+h1::first-line {
+    letter-spacing: 5px;
+}
+
+img {
+    width: 200px;
+    height: 330px;
+    object-fit: contain;
+}
+
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 22px;
+    
+    
+}
+
+.logo-image{
+    
+    height: 80px;
+}
+
+.search-button{
+    width: 70px;
+    height: 80px;
+   
+    
+}
+
+.search-button:hover {
+    background-color: none;
+    outline: none;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.search-button:active {
+    border-radius: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color:none;
+    color: white;
+    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    transform: translateY(4px);
+  }
+
+.search{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
