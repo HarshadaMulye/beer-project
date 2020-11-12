@@ -33,11 +33,11 @@ function render(data)
     const pVolumeTag=document.createElement('p')
     const pBoil_volume=document.createElement('p')
     console.log(Object.values(beer.volume))
-    hTag.textContent=`Name:${name}`;
-    pTag.textContent=`Brewers_tips:${brewers_tips}`
-    pDescTag.textContent=`Description:${description}`
-    pVolumeTag.textContent=`Volume:${volume}`
-    pBoil_volume.textContent=`Boil_Volume:${boil_volume}`
+    hTag.textContent=`Name : ${name}`;
+    pTag.textContent=`Brewers tips : ${brewers_tips}`
+    pDescTag.textContent=` Description : ${description}`
+    pVolumeTag.textContent=`Volume : ${volume}`
+    pBoil_volume.textContent=`Boil Volume : ${boil_volume}`
     const img = document.createElement("img");
     img.setAttribute("src", beer.image_url);
       if(data[0].image_url == null){
@@ -50,7 +50,7 @@ function render(data)
  
   
     const pIngreTag=document.createElement('p')
-    pIngreTag.textContent="Ingredients: "
+    pIngreTag.textContent="Ingredients : "
  
     mainElement.appendChild(img);
     mainElement.appendChild(hTag)
@@ -60,7 +60,7 @@ function render(data)
     mainElement.appendChild(pBoil_volume)
     ingred.forEach(element => {
      
-        pIngreTag.textContent+=''+element.name+''
+        pIngreTag.textContent+= ' '+element.name+' '
        
         mainElement.appendChild(pIngreTag)
      });
@@ -68,7 +68,7 @@ function render(data)
      console.log(hops)
      console.log(hops.length)
      const pHopsTag=document.createElement('p')
-     pHopsTag.textContent="hops: "
+     pHopsTag.textContent="HOPS : "
    
      hops.forEach(element=>{
 
@@ -76,13 +76,13 @@ function render(data)
          const amount=Object.values(element.amount)
          console.log(element)
          
-         pHopsTag.textContent+=`Hops:Name:${element.name} Amount:${amount} Add:${element.add} Attribute:${element.attribute}`
+         pHopsTag.textContent+=` Name : ${element.name}. Amount : ${amount}. Add : ${element.add}. Attribute : ${element.attribute}.`
          mainElement.appendChild(pHopsTag)
      })
      food_pair=beer.food_pairing;
      console.log(food_pair)
      const pFoodpairTag=document.createElement('p')
-     pFoodpairTag.textContent="Food Pair:" 
+     pFoodpairTag.textContent="Food Pair : " 
      food_pair.forEach(element=>{
         pFoodpairTag.textContent+=element 
         mainElement.appendChild(pFoodpairTag) 
