@@ -15,7 +15,7 @@ function moreInfoOnclick(evt) {
     console.log(id)
     const url = `./myview.html?name=${id}`
     document.location.href = url;
-
+    evt.preventDefault();
 }
 
 const getRandomBeer = async() => {
