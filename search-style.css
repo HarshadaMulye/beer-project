@@ -34,8 +34,8 @@ ul{
     list-style: none;
     background-image: url(back2card.png);
     background-size: cover;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 350px;
     border-radius: 50px;
     box-shadow: 20px 12px 2px 15px rgba(0, 0, 20, 0.2);
     border: solid black 2px;
@@ -45,7 +45,7 @@ ul{
 ul li{
     font-family: 'Overlock', cursive;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
     text-decoration: underline;
     
@@ -83,8 +83,19 @@ ul li{
     box-shadow: 12px 12px 2px 6px rgba(0, 0, 20, 0.2);
     
     
+    
 }
 
+.submit:hover {
+    background-color: white;
+}
+
+.submit:active {
+    background-color: rgba(18, 110, 185);
+    color: white;
+    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    transform: translateY(4px);
+  }
 .next{
     font-family: 'Overlock', cursive;
     padding: 7px;
@@ -92,7 +103,7 @@ ul li{
     outline: none;
     font-size: 15px;
     text-align: center;
-    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    box-shadow: 12px 12px 2px 0px rgba(0, 0, 20, 0.2);
     border-radius: 15px;
     border: solid black 2px;
     
@@ -100,6 +111,17 @@ ul li{
     
 
 }
+
+.next:hover {
+    background-color: gray;
+}
+
+.next:active {
+    background-color: black;
+    color: white;
+    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    transform: translateY(4px);
+  }
 
 .prev{
     font-family: 'Overlock', cursive;
@@ -110,12 +132,22 @@ ul li{
     text-align: center;
     border-radius: 15px;
     border: solid black 2px;
-    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    box-shadow: 12px 12px 2px 0px rgba(0, 0, 20, 0.2);
     
     
     
 }
 
+.prev:hover {
+    background-color: gray;
+}
+
+.prev:active {
+    background-color: black;
+    color: white;
+    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    transform: translateY(4px);
+  }
 /*header*/
 
 header{
@@ -136,9 +168,27 @@ header{
 .search-button{
     width: 60px;
     height: 60px;
-   
+    
     
 }
+
+.search-button:hover {
+    background-color: none;
+    outline: none;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.search-button:active {
+    border-radius: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color:none;
+    color: white;
+    box-shadow: 12px 12px 4px 2px rgba(0, 0, 20, 0.2);
+    transform: translateY(4px);
+  }
 
 .search{
     font-family: 'Lato', sans-serif;
@@ -146,4 +196,6 @@ header{
     color: white;
     font-size: 14px;
     
+    
 }
+
