@@ -40,6 +40,9 @@ function render(data)
     pBoil_volume.textContent=`Boil_Volume:${boil_volume}`
     const img = document.createElement("img");
     img.setAttribute("src", beer.image_url);
+      if(data[0].image_url == null){
+        img.src = 'punk_ipa.png';
+      }
     img.setAttribute('width',40)
     ingred=beer.ingredients.hops
     
