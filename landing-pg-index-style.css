@@ -147,6 +147,11 @@ header{
 
 /*footer*/
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 .social-links img{
     
 height: 33px;
